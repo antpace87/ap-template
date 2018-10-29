@@ -23,8 +23,8 @@
 <div class="feature-button-wrap">
     <h2>Feature buttons:</h2>
     <div class="top-buttons button-section">
-        <a href="create-record.php?type1"><button class="feature-button btn">Type 1 <i class="fas fa-glasses"></i></button></a>
-        <a href="create-record.php?type2"><button class="feature-button btn">Type 2 <i class="fas fa-burn"></i> </button></button></a>
+        <a href="create-record.php?type1"><button class="feature-button btn">Type 1 <i class="fab fa-accessible-icon"></i></button></a>
+        <a href="create-record.php?type2"><button class="feature-button btn">Type 2 <i class="fas fa-dice-two"></i></button></button></a>
     </div>
 
 </div>

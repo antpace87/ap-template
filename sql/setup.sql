@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `passwordrecovery` (
   `expire_date` varchar(250) NOT NULL,
   `created_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`passwordrecoveryid`)
-)
+);
 
 use MyApp;
 CREATE TABLE IF NOT EXISTS `records` (
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `records` (
   `notes` varchar(1000),
   `created_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`recordid`)
-)
+);
 
 use MyApp;
 CREATE TABLE IF NOT EXISTS `recordsdetails` (
@@ -49,4 +49,4 @@ CREATE TABLE IF NOT EXISTS `recordsdetails` (
   `finish` varchar(100),
   `created_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`recorddetailsid`)
-)
+);

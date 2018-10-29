@@ -2,7 +2,7 @@
   <div class="menu-strip">
     <a href="create-record.php" class="add-record-from-menu">+</a>
     
-    <h1><img class="logo-symbol" src="/img/logo.png"><a href="index.php">BJJ Tracker</a></h1>
+    <h1><img class="logo-symbol" src="/img/logo.png"><a href="index.php">My App Template</a></h1>
   </div>
 </header>
 

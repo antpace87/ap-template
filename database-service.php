@@ -74,7 +74,7 @@ class DatabaseRecordService{
 
 	function viewAllDetailsByUseridAndType($type){
 		$userid = $this->userid;
-		$type = $type || "generic"
+		$type = $type || "generic";
 
 		if(isset($_SESSION['userid'])){
 			$userid = $_SESSION['userid'];

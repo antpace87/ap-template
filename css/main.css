@@ -15,7 +15,7 @@ header{
   z-index: 10;
 }
 a{
-  color: #2176AE;
+  color: purple;
 }
 .sm_menu_outer {
     height: 100%;
@@ -48,9 +48,9 @@ a{
   display: none;
 }
 .menu-strip{
-  background-color: #2F4F4F; /**/
+  background-color: purple; /**/
   height: 50px;
-  border-bottom: 1px solid #2F4F4F;
+  border-bottom: 1px solid purple;
 }
 .menu-strip h1 a{
   color: white; 
@@ -107,8 +107,8 @@ a{
   width: 40%;
   padding: 5px;
   outline: none;
-  border: 1px solid #2176AE;
-  background-color: #2176AE; /**/
+  border: 1px solid purple;
+  background-color: purple; /**/
   color: white;
   margin: 0 auto;
   margin-top: 5px;
@@ -186,8 +186,8 @@ button i {
   border-radius: 6px;
 }
 .btn{
-  border: 1px solid #2176AE;
-  background-color: #2176AE; 
+  border: 1px solid purple;
+  background-color: purple; 
   color: white;
 }
 .alt-reg .form-wrapper{
@@ -196,7 +196,7 @@ button i {
   border-radius: 0px;
   padding: 8px;
   border: none;
-  border-bottom: 1px solid #2F4F4F;
+  border-bottom: 1px solid purple;
 }
 .alt-reg .form-wrapper .reg-copy{
   display: none;
@@ -454,12 +454,12 @@ button i {
 }
 .in-your-face-inner{
     background: black;
-    background: #2F4F4F;
+    background: purple;
     width: 80%;
     margin: 0 auto;
     opacity: .85;
     padding: 10px;
-    /*border: 6px solid #2176AE;*/
+    /*border: 6px solid purple;*/
 }
 @keyframes pulse{
   25%  {transform: scale(0.9, 0.9);}
@@ -500,7 +500,7 @@ input.datepicker{
 .view-success-icon{
   text-align: center;
   font-size: 48px;
-  color: #2176AE;
+  color: purple;
 }
 .facebook-login-button{
   background-color: #4266b2 !important;
@@ -547,7 +547,7 @@ input.datepicker{
   padding: 5px;
   text-align: center;
   border: 1px solid black;
-  color: #2176AE;
+  color: purple;
   font-weight: bold;
 
 }
@@ -614,8 +614,8 @@ header .logo-symbol{
   cursor: pointer;
 /*  margin: 0 auto;
   display: block;*/
-/*  border: 1px solid #2176AE;
-  background-color: #2176AE;*/
+/*  border: 1px solid purple;
+  background-color: purple;*/
 }
 .delete-record-cta:hover{
 }

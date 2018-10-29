@@ -13,7 +13,7 @@ if( getenv('APPLICATION_ENV') == "production"){
 	$password = "livepassword";
 }
 
-$database = "ap-template";
+$database = "MyApp";
 $options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 );

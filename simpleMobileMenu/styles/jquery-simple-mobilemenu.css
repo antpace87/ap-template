@@ -23,7 +23,7 @@ body.mmactive {
   z-index: -9;
   width: 100%;
   opacity: 0;
-  background-color: #2F4F4F;
+  background-color: purple;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
