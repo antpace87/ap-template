@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     password varchar(500),
     first varchar(250),
     last varchar(250),
+    socialreg varchar(25),
     authid varchar(1000),
     created_date datetime DEFAULT CURRENT_TIMESTAMP,
     updated_date datetime ON UPDATE CURRENT_TIMESTAMP,
@@ -27,3 +28,25 @@ CREATE TABLE IF NOT EXISTS `passwordrecovery` (
   PRIMARY KEY (`passwordrecoveryid`)
 )
 
+use MyApp;
+CREATE TABLE IF NOT EXISTS `records` (
+  `recordid` int NOT NULL AUTO_INCREMENT,
+  `userid` varchar(10) NOT NULL,
+  `type` varchar(15) NOT NULL,
+  `date` varchar(15),
+  `notes` varchar(1000),
+  `created_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`recordid`)
+)
+
+use MyApp;
+CREATE TABLE IF NOT EXISTS `recordsdetails` (
+  `recorddetailsid` int NOT NULL AUTO_INCREMENT,
+  `userid` varchar(10) NOT NULL,
+  `recordid` varchar(10) NOT NULL, 
+  `detailtype` varchar(30) NOT NULL,
+  `result` varchar(10),
+  `finish` varchar(100),
+  `created_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`recorddetailsid`)
+)
