@@ -74,13 +74,13 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
    
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     
-    <link rel="stylesheet" href="simpleMobileMenu/styles/jquery-simple-mobilemenu.css" />
+    <link rel="stylesheet" href="/simpleMobileMenu/styles/jquery-simple-mobilemenu.css" />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <!-- <script async src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
