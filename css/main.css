@@ -40,9 +40,11 @@ a{
 .ap-container{
   padding: 12px;
   padding-bottom: 60px;
+  margin-top: 50px;
 }
-.top-ap-container{
-  margin-top: 50px; /*header*/
+/*only the first will have margin-top:50. subsequent .ap-containter will not*/
+.ap-container ~ .ap-container{
+  margin-top: 0px;
 }
 .details-form, .comp-section{
   display: none;
