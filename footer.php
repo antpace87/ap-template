@@ -45,7 +45,7 @@ $(document).ready(function(){
 	
 	window.validateEmail = function(emailInput){
 		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  		validEmail = regex.test(emailInput.val());
+  		var validEmail = regex.test(emailInput.val());
   		if(validEmail){
 			console.log("valid")
 			return true;
