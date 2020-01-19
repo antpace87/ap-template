@@ -1,4 +1,7 @@
 <?php
+//send email via amazon ses
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 class DatabaseRecordService{ 
 	public $connection;
@@ -397,7 +400,41 @@ class DatabaseUserService{
 			$statement->execute();
 
 			//send email via amazon ses
-			#TODO
+
+			require '/var/www/html/PHPMailer/src/Exception.php';
+			require '/var/www/html/PHPMailer/src/PHPMailer.php';
+			require '/var/www/html/PHPMailer/src/SMTP.php';
+
+			// Instantiation and passing `true` enables exceptions
+			$mail = new PHPMailer(true);
+			try {
+			    //Server settings
+			    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+			    $mail->isSMTP();                                            // Set mailer to use SMTP
+			    $mail->Host       = 'xxx';  // Specify main and backup SMTP servers
+			    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+			    $mail->Username   = 'xxx';                     // SMTP username
+			    $mail->Password   = 'xxx';                               // SMTP password
+			    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+			    $mail->Port       = 587;                                    // TCP port to connect to
+
+			    //Recipients
+			    $mail->setFrom('info@xx.com', 'xx');
+			    $mail->addAddress($email);     // Add a recipient
+			    $mail->addReplyTo('info@xx.com', 'xx');
+
+			    // Content
+			    $mail->isHTML(true);                                  // Set email format to HTML
+			    $reset_url = 'https://www.xxx.com/reset-pw?token='.$token_key;
+			    $mail->Subject = 'Reset your password.';
+			    $mail->Body    = 'Click here to reset your password: <a href="'.$reset_url.'">'. $reset_url .'</a>';
+			    $mail->AltBody = 'Click here to reset your password: ' . $reset_url;
+
+			    $mail->send();
+			    $this->status = 'Message has been sent to: ' . $email;
+			} catch (Exception $e) {
+			    $this->status = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+			}
 
 
 		}else{
